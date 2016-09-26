@@ -25,10 +25,10 @@ var darkSkyClient = new DarkSky('myApiKey');
 
 All methods take the same options object:
 
-*exclude: array containing any of: currently, minutely, hourly, daily, alerts, flags.
-*extend: pass hourly for hour-by-hour data for the next 168 hours, instead of the next 48.
-*lang: en or any other i18n
-*units: us, si, ca, uk2, auto
+* exclude: array containing any of: currently, minutely, hourly, daily, alerts, flags.
+* extend: pass hourly for hour-by-hour data for the next 168 hours, instead of the next 48.
+* lang: en or any other i18n
+* units: us, si, ca, uk2, auto
 
 ## Methods
 
@@ -43,6 +43,7 @@ darkSkyClient.forecast(latitude, longitude, options, function(err, forecast){
     if(err) console.error(err);
     else console.dir(forecast);
 });
+```
 
 ### Time-Machine
 
@@ -53,3 +54,4 @@ darkSkyClient.timemachine(latitude, longitude, new Date(), options, function(err
     if(err) console.error(err);
     else console.dir(forecast);
 });
+```
