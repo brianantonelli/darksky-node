@@ -4,7 +4,7 @@ NodeJS API client for Dark Sky API.
 # Install
 
 ```bash
-$ npm install darksky --save
+$ npm install darksky-node --save
 ```
 
 # Configuration
@@ -16,7 +16,7 @@ You'll need a developer key for the Dark Sky API which can you can create [here]
 Create an instance of the Dark Sky API Client:
 
 ```js
-var DarkSky = require('darksky');
+var DarkSky = require('darksky-node');
 
 var darkSkyClient = new DarkSky('myApiKey');
 ```
