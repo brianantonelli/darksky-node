@@ -3,7 +3,7 @@ NodeJS API client for Dark Sky API.
 
 # Install
 
-```
+```bash
 $ npm install darksky --save
 ```
 
@@ -15,7 +15,7 @@ You'll need a developer key for the Dark Sky API which can you can create [here]
 
 Create an instance of the Dark Sky API Client:
 
-```
+```js
 var DarkSky = require('darksky');
 
 var darkSkyClient = new DarkSky('myApiKey');
@@ -38,7 +38,7 @@ Once you have an instance of the API you can call any of the available methods
 
 A Forecast Request returns the current conditions, a minute-by-minute forecast for the next hour, an hour-by-hour forecast for the next 48 hours, and a day-by-day forecast for the next week.
 
-```
+```js
 darkSkyClient.forecast(latitude, longitude, options, function(err, forecast){
     if(err) console.error(err);
     else console.dir(forecast);
@@ -49,7 +49,7 @@ darkSkyClient.forecast(latitude, longitude, options, function(err, forecast){
 
 A Time Machine Request returns the observed (in the past) or forecasted (in the future) hour-by-hour and daily weather conditions for a particular date.
 
-```
+```js
 darkSkyClient.timemachine(latitude, longitude, new Date(), options, function(err, forecast){
     if(err) console.error(err);
     else console.dir(forecast);
